@@ -1,11 +1,11 @@
-require('dotenv').config();
 var express = require('express'),
    app = express(),
    port = process.env.PORT || 3000,
    mongoose = require('mongoose'),
    cors = require('cors'),
    bodyParser = require('body-parser'),
-   Employee = require('./models/employee'); 
+   Employee = require('./models/employee');
+   require('dotenv').config(); 
    mongoose.Promise = global.Promise;
    mongoose.connect(process.env.DB_URI,  {   useNewUrlParser: true, useUnifiedTopology: true })
    .then(() => {
