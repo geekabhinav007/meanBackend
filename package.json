@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A backend of my app",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekabhinav007/mean-_test.git"
+  },
+  "keywords": [
+    "MEAN"
+  ],
+  "author": "Kumar Abhinav",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geekabhinav007/mean-_test/issues"
+  },
+  "homepage": "https://github.com/geekabhinav007/mean-_test#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0"
+  }
+}
