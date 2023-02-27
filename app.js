@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express'),
    app = express(),
    port = process.env.PORT || 3000,
@@ -6,7 +7,7 @@ var express = require('express'),
    bodyParser = require('body-parser'),
    Employee = require('./models/employee'); 
    mongoose.Promise = global.Promise;
-   mongoose.connect('mongodb://localhost:27017/empdb',  {   useNewUrlParser: true, useUnifiedTopology: true })
+   mongoose.connect(process.env.DB_URI,  {   useNewUrlParser: true, useUnifiedTopology: true })
    .then(() => {
       console.log('Database sucessfully connected')
    },
