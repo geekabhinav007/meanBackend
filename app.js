@@ -7,7 +7,7 @@ var express = require('express'),
    Employee = require('./models/employee');
    require('dotenv').config(); 
    mongoose.Promise = global.Promise;
-   DB_URI="mongodb://localhost:27017/empdb"
+   const DB_URI="mongodb://localhost:27017/empdb"
    mongoose.connect(DB_URI,  {   useNewUrlParser: true, useUnifiedTopology: true })
    .then(() => {
       console.log('Database sucessfully connected')
